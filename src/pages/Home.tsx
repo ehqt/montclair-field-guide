@@ -1,0 +1,387 @@
+import { useState } from 'react'
+import { Link } from 'react-router-dom'
+import { formatDate, institutions, isAppointed, isElected, matchesQuery, namedMembers, NOT_CONFIRMED, oldestVerified, planned, services, useTitle } from '../data'
+import { CATEGORIES, type CategoryId } from '../categories'
+import Icon, { ToolIcon } from '../components/Icon'
+import type { Institution, Planned, Service, Source } from '../schema'
+
+type Filter = CategoryId | 'all'
+
+function InstitutionCard({ inst }: { inst: Institution }) {
+  const named = namedMembers(inst).length
+  return (
+    <li>
+      <Link to={`/institutions/${inst.id}`} className="card card--link inst-card">
+        <span className="inst-card__head">
+          <Icon id={inst.id} category={inst.category} />
+          <span className="eyebrow">{CATEGORIES[inst.category]}</span>
+        </span>
+        <span className="inst-card__name">{inst.name}</span>
+        <span className="inst-card__summary">{inst.summary}</span>
+        <span className="inst-card__meta">
+          <span>Meets: {inst.meets.schedule ?? NOT_CONFIRMED.toLowerCase()}</span>
+          <span>{named ? `${named} members listed · see roster →` : 'Roster not yet confirmed · open page →'}</span>
+        </span>
+      </Link>
+    </li>
+  )
+}
+
+function ServiceCard({ service }: { service: Service }) {
+  return (
+    <li>
+      <Link to={`/services/${service.id}`} className="card card--link inst-card">
+        <span className="inst-card__head">
+          <Icon id={service.id} category={service.category} />
+          <span className="eyebrow">{CATEGORIES[service.category]}</span>
+        </span>
+        <span className="inst-card__name">{service.name}</span>
+        <span className="inst-card__summary">{service.summary}</span>
+        <span className="inst-card__meta">
+          <span>{service.layer === 'contracted' ? 'Contracted service' : 'Township department'}</span>
+          <span>Open page →</span>
+        </span>
+      </Link>
+    </li>
+  )
+}
+
+type MapItem = { id: string; name: string; live: boolean; source?: Source; to?: string }
+
+function MapLink({ item, className }: { item: MapItem; className?: string }) {
+  return item.live ? (
+    <Link className={className} to={item.to ?? `/institutions/${item.id}`}>
+      {item.name}
+    </Link>
+  ) : (
+    <span className={className && `${className} pill--soon`}>{item.name}</span>
+  )
+}
+
+/**
+ * Only bodies with a source for how they are seated appear here: a live
+ * institution needs seated_source, a planned one needs layer + source.
+ */
+function RelationshipMap() {
+  const live = institutions
+    .filter((i) => i.seated_source)
+    .map((i) => ({ id: i.id, name: i.name, live: true, source: i.seated_source, inst: i }))
+  // The county is elected too, but it is a separate government: it goes in its own row.
+  const local = live.filter((i) => i.inst.category !== 'county-state')
+  const above = live.filter((i) => i.inst.category === 'county-state').map((i) => ({ ...i, to: `/institutions/${i.id}` }))
+  const elected: MapItem[] = local.filter((i) => isElected(i.inst))
+  const appointed: MapItem[] = [
+    ...local.filter((i) => isAppointed(i.inst)),
+    ...planned.filter((p) => p.layer === 'appointed').map((p) => ({ id: p.id, name: p.name, live: false, source: p.source })),
+  ]
+  const plannedIn = (layer: Planned['layer']): MapItem[] => [
+    ...services
+      .filter((s) => s.layer === layer)
+      .map((s) => ({ id: s.id, name: s.name, live: true, source: s.sources[0], to: `/services/${s.id}` })),
+    ...planned.filter((p) => p.layer === layer).map((p) => ({ id: p.id, name: p.name, live: false, source: p.source })),
+  ]
+  const rows = [
+    { label: 'Township departments', items: plannedIn('department') },
+    { label: 'Bought from a neighbouring town', items: plannedIn('contracted') },
+    { label: 'Also taxes Montclair property', items: [...above, ...plannedIn('above')] },
+  ].filter((row) => row.items.length > 0)
+
+  const sources = new Map<string, Source>()
+  for (const item of [...elected, ...appointed, ...rows.flatMap((r) => r.items)]) {
+    if (item.source) sources.set(item.source.url, item.source)
+  }
+
+  return (
+    <>
+      <div className="card map">
+        <div className="map__residents">Montclair residents</div>
+        <div className="map__connector">elect</div>
+        <ul className="map__row">
+          {elected.map((b) => (
+            <li key={b.id} className="map__elected">
+              <Icon id={b.id} category={b.id === 'board-of-education' ? 'schools' : 'township-government'} />
+              <MapLink item={b} />
+            </li>
+          ))}
+        </ul>
+        {appointed.length > 0 && (
+          <>
+            <div className="map__connector">the Mayor or the Council appoints</div>
+            <ul className="map__pills">
+              {appointed.map((b) => (
+                <li key={b.id}>
+                  <MapLink item={b} className="pill" />
+                </li>
+              ))}
+            </ul>
+          </>
+        )}
+        <div className="map__rows">
+          {rows.map((row) => (
+            <div key={row.label} className="map__above">
+              <span className="eyebrow eyebrow--muted">{row.label}</span>
+              <span>
+                {row.items.map((a, i) => (
+                  <span key={a.id}>
+                    {i > 0 && ' · '}
+                    {a.live ? (
+                      <Link className="text-link" to={a.to!}>
+                        {a.name}
+                      </Link>
+                    ) : (
+                      a.name
+                    )}
+                  </span>
+                ))}
+              </span>
+            </div>
+          ))}
+        </div>
+      </div>
+      <p className="fine">
+        Dashed names, and names without a link, do not have a page yet. Sources for this diagram:{' '}
+        {[...sources.values()].map((s, i) => (
+          <span key={s.url}>
+            {i > 0 && ' · '}
+            <a className="text-link" href={s.url}>
+              {s.title}
+            </a>
+          </span>
+        ))}
+      </p>
+    </>
+  )
+}
+
+export default function Home() {
+  useTitle()
+  const [filter, setFilter] = useState<Filter>('all')
+  const [query, setQuery] = useState('')
+  const verified = oldestVerified()
+
+  const inFilter = (c: CategoryId) => filter === 'all' || c === filter
+  const shown = institutions.filter((i) => inFilter(i.category) && matchesQuery(i, query))
+  const q = query.trim().toLowerCase()
+  const shownServices = services.filter(
+    (s) => inFilter(s.category) && (!q || [s.name, ...s.aliases, s.summary, ...s.people.map((p) => p.name)].some((t) => t.toLowerCase().includes(q))),
+  )
+  const soon = planned.filter((p) => inFilter(p.category) && p.name.toLowerCase().includes(query.trim().toLowerCase()))
+
+  return (
+    <>
+      <div className="hero-band">
+        <section className="container hero stack">
+          <div className="eyebrow eyebrow--lg hero__eyebrow">An unofficial guide for residents</div>
+          <h1 className="hero__title">Who runs what in Montclair?</h1>
+          <p className="lede hero__lede">
+            Every board, commission and office in the township and the schools: what each one decides, who sits on
+            it, and where to go when you need something.
+          </p>
+          <div className="hero__actions">
+            <Link className="button button--link button--light" to="/tour">
+              New here? Take the tour →
+            </Link>
+            <Link className="button button--link button--ghost" to="/i-want-to">
+              I want to…
+            </Link>
+          </div>
+          <ul className="hero__bodies" aria-label="Jump to a body">
+            {[...institutions, ...services].map((b) => (
+              <li key={b.id}>
+                <Link
+                  className="hero__body"
+                  to={'layer' in b ? `/services/${b.id}` : `/institutions/${b.id}`}
+                  title={b.name}
+                >
+                  <Icon id={b.id} category={b.category} />
+                  <span className="visually-hidden">{b.name}</span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+          <p className="fine hero__fine">
+            {verified && <>Pages last verified {formatDate(verified)} or later · </>}
+            Every page links to its official source ·{' '}
+            <Link className="hero__link" to="/report">
+              Spot something wrong? Report an error
+            </Link>
+          </p>
+        </section>
+      </div>
+
+      <section id="map" tabIndex={-1} className="container section stack" aria-labelledby="map-heading">
+        <div className="stack stack--sm">
+          <h2 id="map-heading">How it fits together</h2>
+          <p className="measure muted">
+            Residents elect the Township Council and the Board of Education. The Council hires the Township
+            Manager and appoints most board members; the Mayor appoints a few, such as the library trustees. Each
+            body's page says who appoints it.
+          </p>
+        </div>
+        <RelationshipMap />
+      </section>
+
+      <section className="container stack tools" aria-labelledby="tools-heading">
+        <h2 id="tools-heading">Everyday questions</h2>
+        <ul className="grid">
+          <li>
+            <Link to="/tour" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="tour" />
+              <span className="inst-card__name">New here? Take the tour</span>
+              <span className="inst-card__summary">
+                Five things to know about how Montclair is run, each with a place to read more.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/i-want-to" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="i-want-to" />
+              <span className="inst-card__name">I want to…</span>
+              <span className="inst-card__summary">
+                Pay a tax bill, request a record, find your ward: which township office handles it.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/budget" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="budget" />
+              <span className="inst-card__name">Where the money goes</span>
+              <span className="inst-card__summary">
+                How the property tax levy splits among the schools, the township and the county, and who sets each
+                budget.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/calendar" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="calendar" />
+              <span className="inst-card__name">Civic calendar</span>
+              <span className="inst-card__summary">
+                When each body meets, the dated meetings coming up, and what comes round every year.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/first-meeting" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="first-meeting" />
+              <span className="inst-card__name">Your first public meeting</span>
+              <span className="inst-card__summary">
+                What the law says about attending and speaking, and each body's own rules for public comment.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/permits" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="permits" />
+              <span className="inst-card__name">Permit finder</span>
+              <span className="inst-card__summary">
+                Building, changing a historic exterior, asking for a variance: which office or board to ask first.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/glossary" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="glossary" />
+              <span className="inst-card__name">Glossary</span>
+              <span className="inst-card__summary">
+                Variance, ordinance, executive session and other terms you will meet on an agenda.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/people" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="people" />
+              <span className="inst-card__name">People index</span>
+              <span className="inst-card__summary">
+                Everyone named in the guide in one list, so you can see who serves on more than one body.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+          <li>
+            <Link to="/at-a-glance" className="card card--link inst-card inst-card--tool">
+              <ToolIcon name="at-a-glance" />
+              <span className="inst-card__name">Montclair at a glance</span>
+              <span className="inst-card__summary">
+                Every body on one printable page: what it does, when it meets and how to reach it.
+              </span>
+              <span className="inst-card__meta">Open →</span>
+            </Link>
+          </li>
+        </ul>
+      </section>
+
+      <section id="institutions" tabIndex={-1} className="band" aria-labelledby="institutions-heading">
+        <div className="container section stack">
+          <h2 id="institutions-heading">Browse every institution</h2>
+
+          <div className="search">
+            <label htmlFor="q">Search institutions and people</label>
+            <input
+              id="q"
+              type="search"
+              value={query}
+              onChange={(e) => setQuery(e.target.value)}
+              placeholder="Try “variance”, “school budget”, or a name"
+            />
+          </div>
+
+          <div className="chips" role="group" aria-label="Filter by category">
+            {(['all', ...Object.keys(CATEGORIES)] as Filter[]).map((c) => (
+              <button
+                key={c}
+                type="button"
+                className="chip"
+                aria-pressed={filter === c}
+                onClick={() => setFilter(c)}
+              >
+                {c === 'all' ? 'All' : CATEGORIES[c]}
+              </button>
+            ))}
+          </div>
+
+          <p className="fine" aria-live="polite">
+            {shown.length + shownServices.length} with a page{soon.length > 0 && ` · ${soon.length} coming soon`}
+          </p>
+
+          {shown.length > 0 && (
+            <ul className="grid">
+              {shown.map((inst) => (
+                <InstitutionCard key={inst.id} inst={inst} />
+              ))}
+            </ul>
+          )}
+
+          {shownServices.length > 0 && (
+            <ul className="grid">
+              {shownServices.map((s) => (
+                <ServiceCard key={s.id} service={s} />
+              ))}
+            </ul>
+          )}
+
+          {soon.length > 0 && (
+            <ul className="grid">
+              {soon.map((p) => (
+                <li key={p.id} className="card inst-card inst-card--soon">
+                  <span className="eyebrow eyebrow--muted">{CATEGORIES[p.category]}</span>
+                  <span className="inst-card__name">{p.name}</span>
+                  <span className="inst-card__meta">Coming soon</span>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {shown.length + shownServices.length + soon.length === 0 && <p className="muted">Nothing matches that search yet.</p>}
+        </div>
+      </section>
+    </>
+  )
+}

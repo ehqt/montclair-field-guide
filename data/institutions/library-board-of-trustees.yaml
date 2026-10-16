@@ -1,0 +1,92 @@
+# Montclair Field Guide: one institution file
+# From the library's Board of Trustees page and the township's
+# Council-Manager Form of Government page, read in a browser 2026-10-16.
+
+id: library-board-of-trustees
+name: Library Board of Trustees
+aliases: [Montclair Public Library Board, Library Board, Public Library]
+category: services
+
+summary: >
+  The board of trustees of the Montclair Public Library. Trustees are
+  appointed by the Mayor, and the Mayor and the Superintendent of Schools
+  are members by statute. The library is independent of the Township.
+powers:
+  - '"Do all things necessary and proper for the establishment and maintenance of the free public library in the municipality" (N.J.S.A. 40:54-12, as quoted by the library)'
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Appointed by the Mayor to five-year terms. The Mayor and the
+  Superintendent of Schools are members by statute.
+seated_source: { title: "Board of Trustees (library page)", url: "https://montclairlibrary.org/about/board-of-trustees/" }
+appointed_by: The Mayor
+reports_to: null
+member_terms: 5 years
+
+members:
+  - { name: JoAnn McCullough, role: President }
+  - { name: Theodore Graham,  role: "Vice President; Alternate for the Mayor" }
+  - { name: Brian Clarkson,   role: Treasurer }
+  - { name: Diana Lunin,      role: Secretary }
+  - { name: Lilian Ferguson,  role: Trustee }
+  - { name: Andrew Silver,    role: Trustee }
+  - { name: Paul Sionas,      role: Trustee }
+  - { name: Keshia Trotman,   role: Trustee }
+  - { name: Erika Pierce,     role: Alternate for the Superintendent of Montclair Public Schools }
+roster_as_of: 2026-10-16
+
+notes:
+  - title: Founded by a vote of residents
+    body: >-
+      The library says it is independent of Montclair Township and was
+      established by a vote of the residents on April 12, 1893.
+    sources:
+      - { title: "Board of Trustees (library page)", url: "https://montclairlibrary.org/about/board-of-trustees/" }
+
+meets:
+  schedule: Third Monday of the month, 7:00 pm
+  schedule_note: >
+    No meetings in August or December. Some 2026 dates differ (January 12,
+    February 9 and February 27), and March 16 was all virtual. Meetings are
+    in person with an option to join by Zoom; login details are on the
+    library's events calendar and the agenda.
+  location: Main Library auditorium, 50 South Fullerton Avenue
+  quorum: null
+  dates:
+    - { date: 2026-01-12 }
+    - { date: 2026-02-09 }
+    - { date: 2026-02-27 }
+    - { date: 2026-03-16, note: All virtual }
+    - { date: 2026-04-20 }
+    - { date: 2026-05-18 }
+    - { date: 2026-06-15 }
+    - { date: 2026-07-20 }
+    - { date: 2026-09-21 }
+    - { date: 2026-10-19 }
+    - { date: 2026-11-16 }
+
+how_to_engage:
+  public_comment: null
+  notice: >-
+    Meetings are open to the public under the Open Public Meetings Act.
+  contact:
+    phone: 973-744-0500
+    email: reference@montclairlibrary.org
+    address: 50 South Fullerton Avenue, Montclair, NJ 07042
+
+links:
+  official_page: https://montclairlibrary.org/about/board-of-trustees/
+  meetings_url: https://montclairlibrary.org/about/board-of-trustees/
+
+last_verified: 2026-10-16
+verification_level: library page read in a browser
+sources:
+  - { title: "Board of Trustees (library page)", url: "https://montclairlibrary.org/about/board-of-trustees/" }
+  - { title: "Council – Manager Form of Government (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Council-Manager-Form-of-Government" }
+
+needs_verification:
+  - Public comment rules
+  - The Library Director's name
+  - Each trustee's term end
+  - What the board cannot decide

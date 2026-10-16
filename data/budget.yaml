@@ -1,0 +1,104 @@
+# Montclair Field Guide: how the property tax levy splits.
+# Every figure is from the Montclair Township row (MuniCode 0713) of the
+# state's 2025 Property Tax Information workbook, "Municipal Tax Summary"
+# and "Citizens Tax Summary" sheets, read 2026-10-16. Dollar amounts are
+# rounded to the dollar and rates to three decimals. Shares are computed
+# from the levies at build time, not stored here.
+
+tax_year: 2025
+last_verified: 2026-10-16
+sources:
+  - &dca
+    title: "NJ Department of Community Affairs, 2025 Property Tax Information (Excel)"
+    url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax/25_data/25taxes.xls"
+  - title: "NJ DCA Division of Local Government Services, Property Tax Information"
+    url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax_info.shtml"
+
+net_valuation_taxable: 7212368100
+total_rate: 3.516                    # per $100 of assessed value
+average_residential_value: 639628    # assessed value, not market value
+average_total_taxes: 22487           # before credits and deductions
+
+# `institution` is the id of the body that sets this budget, when it has a
+# page or a planned page.
+shares:
+  - id: schools
+    name: Schools
+    set_by: the Board of Education
+    institution: board-of-education
+    pays: >-
+      The Montclair Public Schools. The state's workbook splits the school
+      levy into the amount required by the district school budget and a
+      smaller amount listed as required by the local municipal budget.
+    pays_source: *dca
+    levy: 145594732
+    rate: 2.019
+    average_taxes: 12912
+    lines:
+      - { name: District school budget, levy: 137850631 }
+      - { name: Required by the local municipal budget, levy: 7744101 }
+  - id: township
+    name: Township
+    set_by: the Township Council
+    institution: mayor-and-council
+    pays: >-
+      The township's own budget for local municipal purposes, plus a
+      separate minimum library tax.
+    pays_source: *dca
+    levy: 66479830
+    rate: 0.922
+    average_taxes: 5896
+    lines:
+      - { name: Local municipal purposes, levy: 62590915 }
+      - { name: Minimum library tax, levy: 3888915 }
+  - id: county
+    name: County
+    set_by: Essex County
+    institution: essex-county
+    pays: Essex County's own budget, plus a county open space trust fund.
+    pays_source: *dca
+    full_budget:
+      text: >-
+        The 2026 county budget has total appropriations of $905,624,909, of
+        which $468,435,000 is raised by county purpose taxes across all
+        Essex County towns.
+      source: { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+    levy: 41484208
+    rate: 0.575
+    average_taxes: 3679
+    lines:
+      - { name: County purposes, levy: 39715379 }
+      - { name: County open space trust fund, levy: 1768829 }
+
+# How a budget gets adopted. Each step states only what its sources say.
+process:
+  - title: The county's budget runs on its own calendar
+    body: >-
+      The Board of County Commissioners approved the 2026 county budget on
+      March 4, 2026 and set its public hearing for March 25, 2026 at 5:00
+      pm at the Hall of Records in Newark. Adoption was listed for second
+      reading and public hearing on the board's March 25 agenda and again
+      on its April 15 agenda. The budget raises $468,435,000 in county
+      purpose taxes across all Essex County towns, up from $460,435,000 in
+      2025.
+    sources:
+      - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+      - { title: "County commissioners' agenda, March 25 2026 (PDF)", url: "https://ecode360.com/ES1525/document/753241978.pdf" }
+      - { title: "County commissioners' agenda, April 15 2026 (PDF)", url: "https://ecode360.com/ES1525/document/753246666.pdf" }
+  - title: The levies become tax rates
+    body: >-
+      Each rate is its levy divided by the township's total taxable
+      valuation, stated per $100. In 2025, $253.6 million in levies over
+      $7.21 billion in taxable value gave the total rate of 3.516.
+    sources: [*dca]
+process_note: >-
+  How the Township Council and the Board of Education introduce, hear and
+  adopt their budgets will be added once their budget documents have been
+  read.
+
+needs_verification:
+  - The township's 2026 budget (introduction, hearing and adoption dates, total appropriations)
+  - The school district's 2026-27 budget and its hearing date
+  - What the "required by the local municipal budget" part of the school levy pays for
+  - Certified 2026 figures, once the state publishes its 2026 workbook
+  - The meeting at which the commissioners voted to adopt the 2026 county budget

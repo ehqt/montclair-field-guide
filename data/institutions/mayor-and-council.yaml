@@ -1,0 +1,147 @@
+# Montclair Field Guide: one institution file
+# From the township's Mayor & Township Council, Council-Manager Form of
+# Government, Council Meeting Schedule, Office of the Township Manager and
+# Find Your Ward pages (read in a browser 2026-10-16), and the Essex County
+# Clerk's 2026 sample ballot.
+
+id: mayor-and-council
+name: Mayor and Township Council
+aliases: [Township Council, Council, Mayor, Governing body, Montclair Township Council]
+category: township-government
+
+summary: >
+  Montclair's governing body: a Mayor and six councilors (two at large and
+  one from each of the four wards). Under the council-manager plan the
+  Council sets all policy and hires the Township Manager, who runs the
+  township day to day.
+powers:
+  # From the township's Council-Manager Form of Government page.
+  - Hold all powers of the municipality and decide all matters of policy, except as the Faulkner Act or general law provide otherwise
+  - Appoint the Township Manager, and suspend or remove the Manager by a majority vote
+  - Appoint most members of the Planning Board and all members of the Zoning Board of Adjustment
+limits:
+  - The Mayor has no executive powers beyond a few appointments, such as the library trustees and the Historic Preservation Commission; the Mayor presides over the Council and votes as one of its members
+
+how_seated: >-
+  Elected by voters. The Mayor is elected directly by the voters to a
+  four-year term. Councilors serve four-year terms that run concurrently,
+  so all expire at the same time except for vacancies.
+seated_source: { title: "Council – Manager Form of Government (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Council-Manager-Form-of-Government" }
+appointed_by: null
+reports_to: null
+appoints: [Township Manager, Planning Board (Class III and IV members), Zoning Board of Adjustment]
+
+members:
+  # Names, seats, phones and emails are on the Mayor & Township Council page.
+  - { name: Dr. Renee Baskerville,   role: Mayor,                                   seated_by: elected }
+  - { name: Susan Shin Andersen,      role: Deputy Mayor and Councilor At Large,     seated_by: elected }
+  - { name: William Harrison,         role: Councilor At Large }
+  - { name: Erik D'Amato,             role: 1st Ward Councilor,                      seated_by: elected }
+  - { name: Eileen Birmingham,        role: 2nd Ward Councilor,                      seated_by: elected }
+  - { name: Rahum Williams,           role: 3rd Ward Councilor,                      seated_by: elected }
+  - { name: Aminah Toler,             role: 4th Ward Councilor,                      seated_by: elected }
+roster_as_of: 2026-10-16
+
+professionals:
+  - { name: "Stephen D. Marks", credentials: "PP, AICP", role: Township Manager }
+
+notes:
+  - title: The council-manager plan
+    body: >-
+      Montclair operates under the Optional Municipal Charter Law, known as
+      the Faulkner Act, and voted in 1980 to adopt its council-manager plan.
+      The Council is the only directly elected center of power. The
+      Township Manager is the chief executive and administrative officer,
+      appointed by the Council, and carries out the Council's will. The
+      Deputy Township Manager, Chief Financial Officer, department
+      directors and other staff report to the Manager.
+    sources:
+      - { title: "Council – Manager Form of Government (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Council-Manager-Form-of-Government" }
+      - { title: "Office of the Township Manager (township page)", url: "https://www.montclairnjusa.org/Government/Office-of-the-Township-Manager" }
+  - title: Wards
+    body: >-
+      The township is divided into four wards, each electing one councilor.
+      The Township Clerk keeps the ward map, and the township's interactive
+      ward viewer finds the ward for an address.
+    sources:
+      - { title: "Find Your Ward (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Find-Your-Ward" }
+  - title: On the November 3, 2026 ballot
+    body: >-
+      One Councilmember At Large seat is on Montclair's 2026 general
+      election ballot, in the municipal election section, where candidates are nominated by petition.
+    sources:
+      - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF), Township of Montclair pages", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+
+meets:
+  schedule: Tuesdays, usually twice a month, 5:30 pm
+  schedule_note: >
+    The annual notice lists each 2026 date. Executive sessions are scheduled
+    as required, and the Council may take action at any of its meetings.
+    Meetings are broadcast live on local channel 34 and on the Montclair
+    TV34 YouTube channel.
+  location: Council Chambers, Municipal Building, 205 Claremont Avenue
+  quorum: null
+  dates:
+    - { date: 2026-01-06 }
+    - { date: 2026-01-27 }
+    - { date: 2026-02-10 }
+    - { date: 2026-02-24 }
+    - { date: 2026-03-12, note: "Special meeting, 3:00 pm" }
+    - { date: 2026-03-17, note: "Moved from March 10 to avoid the school district special election" }
+    - { date: 2026-03-24 }
+    - { date: 2026-04-07, note: "2nd floor conference room, Municipal Building" }
+    - { date: 2026-04-21 }
+    - { date: 2026-05-05 }
+    - { date: 2026-05-19 }
+    - { date: 2026-06-09 }
+    - { date: 2026-07-14 }
+    - { date: 2026-08-11 }
+    - { date: 2026-09-15 }
+    - { date: 2026-09-29 }
+    - { date: 2026-10-06 }
+    - { date: 2026-10-20 }
+    - { date: 2026-11-10 }
+    - { date: 2026-11-24 }
+    - { date: 2026-12-08 }
+    - { date: 2026-12-29 }
+
+how_to_engage:
+  public_comment: null
+  notice: >-
+    Agendas and meeting documents are posted on the township's Council
+    Meeting Agendas page. Older agendas, adopted resolutions and minutes are
+    in the township's eCode360 library.
+  contact:
+    main_line: 973-744-1400
+    clerk: 973-509-4900
+    manager: 973-509-4926
+    email: info@montclairnjusa.org
+    address: Municipal Building, 205 Claremont Avenue, Montclair, NJ 07042
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Mayor-Township-Council
+  meetings_url: https://www.montclairnjusa.org/Government/Council-Meeting-Schedule
+  agendas_url: https://www.montclairnjusa.org/Government/Council-Meeting-Agendas
+  minutes: https://ecode360.com/MO0769/documents/Minutes
+  resolutions: https://ecode360.com/MO0769/documents/Resolutions
+  ward_map: https://www.montclairnjusa.org/Government/Mayor-Township-Council/Find-Your-Ward
+  manager_page: https://www.montclairnjusa.org/Government/Office-of-the-Township-Manager
+
+last_verified: 2026-10-16
+verification_level: township pages read in a browser
+sources:
+  - { title: "Mayor & Township Council (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council" }
+  - { title: "Council – Manager Form of Government (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Council-Manager-Form-of-Government" }
+  - { title: "Council Meeting Schedule (township page)", url: "https://www.montclairnjusa.org/Government/Council-Meeting-Schedule" }
+  - { title: "Council Meeting Agendas (township page)", url: "https://www.montclairnjusa.org/Government/Council-Meeting-Agendas" }
+  - { title: "Office of the Township Manager (township page)", url: "https://www.montclairnjusa.org/Government/Office-of-the-Township-Manager" }
+  - { title: "Find Your Ward (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Find-Your-Ward" }
+  - { title: "Planning Board, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Members" }
+  - { title: "Zoning Board of Adjustment, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Zoning-Board-of-Adjustment/Members" }
+  - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+
+needs_verification:
+  - How William Harrison came to hold the at-large seat, and why only one at-large seat is on the 2026 ballot
+  - When the current four-year council term ends
+  - Quorum, and the Council's rules for public comment
+  - The Township Clerk's name (a search result names the Clerk; the source has not been opened)

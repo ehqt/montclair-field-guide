@@ -1,0 +1,90 @@
+# Montclair Field Guide: one institution file
+# From the district's Board of Education and About the Board pages (read in a
+# browser 2026-10-16) and the Essex County Clerk's 2026 sample ballot.
+
+id: board-of-education
+name: Board of Education
+aliases: [BOE, School Board, Montclair Board of Education, Montclair Public Schools]
+category: schools
+
+summary: >
+  Nine volunteer members elected by the community. The board sets policy for
+  the Montclair Public Schools and holds its business meetings in public.
+powers:
+  # From the district's About the Board page.
+  - Decide policy matters for the district
+  - Conduct its business and take all official votes in public session
+limits:
+  - Matters without policy implications are generally decided at the school level with the Superintendent's central office; individual concerns usually reach the board only after the teacher, the principal and the Superintendent's office
+
+how_seated: >-
+  Elected by voters. The board's nine members are elected by the community.
+  Three seats are on Montclair's November 3, 2026 general election ballot.
+seated_source: { title: "About the Board (district page)", url: "https://www.montclairps.org/board_of_education/about_the_board" }
+appointed_by: null
+reports_to: null
+
+members:
+  # Names, offices and the terms as the district writes them are from the
+  # district's Board of Education page.
+  - { name: Yvonne Bouknight,    role: President,      term_ends: "Term 2026-2028" }
+  - { name: Holly Shaw,          role: Vice President, term_ends: "Term 2025-2027" }
+  - { name: Melanie Deysher,     role: Member,         term_ends: "Term 2024-2026" }
+  - { name: Phaedra Dunn,        role: Member,         term_ends: "Term 2024-2026" }
+  - { name: Sean Long,           role: Member,         term_ends: "Term 2026-2028" }
+  - { name: Kerri McMahon,       role: Member,         term_ends: "Term 2026-2028" }
+  - { name: Jada Roman,          role: Member,         term_ends: "Term 2025-2027" }
+  - { name: Eric Scherzer,       role: Member,         term_ends: "Term 2025-2027" }
+  - { name: Allison Silverstein, role: Member,         term_ends: "Term 2024-2026" }
+roster_as_of: 2026-10-16
+
+professionals:
+  - { name: Dana Sullivan, role: Interim Business Administrator and Board Secretary }
+  - { name: Beth Brooks,   role: Treasurer of School Monies }
+
+meets:
+  schedule: First and third Mondays, public session about 7:30 pm
+  schedule_note: >
+    Meetings generally open at 6:30 pm and go straight into executive
+    session. No meetings are typically scheduled in July. Special meetings
+    are called as needed with at least 48 hours' notice. See the Board
+    Calendar for this year's dates.
+  location: Cafeteria, George Inness Annex, 141 Park Street
+  quorum: null
+
+how_to_engage:
+  public_comment: >
+    Every meeting has an opportunity for public comment on both agenda and
+    non-agenda items.
+  written_comment: >
+    Write to board members in care of the Montclair Board of Education,
+    22 Valley Road, Montclair, NJ 07042, or by email at the addresses on the
+    district's Board of Education page. A letter sent to several members
+    usually gets one reply, most often from the Board President.
+  notice: >-
+    Notice and a detailed agenda are published on the district website at
+    least 48 hours before each meeting.
+  contact:
+    phone: 973-509-4000
+    address: 22 Valley Road, Montclair, NJ 07042
+
+links:
+  official_page: https://www.montclairps.org/board_of_education
+  about: https://www.montclairps.org/board_of_education/about_the_board
+  agendas_url: https://www.montclairps.org/board_of_education/agendas
+  meetings_url: https://www.montclairps.org/board_of_education/calendar
+  minutes: https://www.montclairps.org/board_of_education/minutes
+  policies: https://www.montclairps.org/board_of_education/bylaws_and_policies
+
+last_verified: 2026-10-16
+verification_level: district pages read in a browser
+sources:
+  - { title: "Board of Education (district page)", url: "https://www.montclairps.org/board_of_education" }
+  - { title: "About the Board (district page)", url: "https://www.montclairps.org/board_of_education/about_the_board" }
+  - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+
+needs_verification:
+  - Length of a term and the month terms begin
+  - The Superintendent's name and contract
+  - Quorum and the board's public comment time limits
+  - What the board cannot decide

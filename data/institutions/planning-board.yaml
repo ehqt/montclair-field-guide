@@ -1,0 +1,130 @@
+# Montclair Field Guide: one institution file
+# From the township's Planning Board, Members and Schedule of Meetings
+# pages, read in a browser 2026-10-16.
+
+id: planning-board
+name: Planning Board
+aliases: [Montclair Planning Board, Master Plan, Site plan, Subdivision]
+category: land-use
+
+summary: >
+  A land use board of nine members and two alternates. It prepares the
+  Township Master Plan, reviews site plan and subdivision applications, and
+  advises the Council on changes to the land use ordinance.
+powers:
+  # From the Planning Board page.
+  - Prepare, adopt or amend the Township Master Plan
+  - Review applications for development for site plan and subdivision approval
+  - Make recommendations to the Township Council on proposed changes to the land use ordinance
+  - Grant conditional use or bulk variances in association with subdivision and site plan applications
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Members come from four classes: the Mayor or the Mayor's designee (Class
+  I), a municipal official appointed by the Mayor (Class II), a member of
+  the Council appointed by the Council (Class III), and six citizens
+  appointed by the Council (Class IV). The Council also appoints the two
+  alternates.
+seated_source: { title: "Planning Board, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Members" }
+appointed_by: The Township Council, except the Class I and Class II members
+reports_to: null
+
+members:
+  - { name: Keith Brodock,          role: "Chair; Class IV (Environmental Commission)" }
+  - { name: Michael Graham,         role: "Vice Chair; Class IV (Historic Preservation Commission)" }
+  - { name: Mayor Renee Baskerville, role: Class I }
+  - { name: Shivaun Gaines,         role: Class II }
+  - { name: Erik D'Amato,           role: Class III }
+  - { name: Carole Willis,          role: Class IV }
+  - { name: Geoffrey Borshof,       role: Class IV }
+  - { name: Thamar Campbell,        role: Class IV }
+  - { name: Anthony Ianuale,        role: Class IV }
+  - { name: Nicole Wallace,         role: Alternate }
+  - { name: Santiago Orbea,         role: Alternate }
+roster_as_of: 2026-10-16
+
+professionals:
+  - { name: Janice Talley, credentials: "P.P., AICP", role: Secretary }
+  - { name: Zainab Kazmi, role: Assistant Secretary }
+  - { name: Arthur Neiss, credentials: Esq., role: Board Attorney }
+  - { name: "Norberto Hernandez (Neglia Engineering)", credentials: P.E., role: Board Engineer }
+  - { name: "Brian Intindola (Neglia Engineering)", credentials: P.E., role: Traffic Engineer }
+  - { name: Level G Associates, role: Parking }
+
+notes:
+  - title: Regular and workshop meetings
+    body: >-
+      Applications for development are heard at "Regular" meetings, the
+      first meeting of the month. "Workshop" meetings, the second meeting
+      of the month, cover other planning initiatives, including
+      redevelopment plans. The Department of Planning & Community
+      Development staffs the board, which is established under Montclair
+      Code Chapter 202, Article I.
+    sources:
+      - { title: "Planning Board, Schedule of Meetings (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Schedule-of-Meetings" }
+      - { title: "Planning Board (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board" }
+
+meets:
+  schedule: Two Mondays a month, 7:00 pm
+  schedule_note: >
+    The board meets twice a month on the dates in its annual schedule. It
+    meets remotely if a public health, state or local emergency has been
+    declared. Meetings are broadcast live on TV34 and the Montclair
+    Government YouTube channel.
+  location: Council Chamber, Municipal Building, 205 Claremont Avenue
+  quorum: null
+  dates:
+    - { date: 2026-01-12 }
+    - { date: 2026-01-26, note: Canceled due to winter storm }
+    - { date: 2026-02-09 }
+    - { date: 2026-02-23 }
+    - { date: 2026-03-09 }
+    - { date: 2026-03-23 }
+    - { date: 2026-04-13 }
+    - { date: 2026-04-27 }
+    - { date: 2026-05-04 }
+    - { date: 2026-05-18 }
+    - { date: 2026-06-01 }
+    - { date: 2026-06-15 }
+    - { date: 2026-07-06 }
+    - { date: 2026-07-20 }
+    - { date: 2026-08-03 }
+    - { date: 2026-08-17 }
+    - { date: 2026-08-31 }
+    - { date: 2026-09-14 }
+    - { date: 2026-09-28 }
+    - { date: 2026-10-05 }
+    - { date: 2026-10-19 }
+    - { date: 2026-11-02 }
+    - { date: 2026-11-16 }
+    - { date: 2026-12-07 }
+    - { date: 2026-12-21 }
+
+how_to_engage:
+  public_comment: null
+  notice: >-
+    Agendas and minutes are in the Public Documents section of the
+    township's eCode360 library.
+  contact:
+    address: Department of Planning & Community Development, Municipal Building, 205 Claremont Avenue
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board
+  members: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Members
+  meetings_url: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Schedule-of-Meetings
+  agendas_url: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Planning-Board-Meeting-Agendas
+  minutes: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Minutes-Video
+  bylaws: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/By-Laws-of-the-Planning-Board
+
+last_verified: 2026-10-16
+verification_level: township pages read in a browser
+sources:
+  - { title: "Planning Board (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board" }
+  - { title: "Planning Board, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Members" }
+  - { title: "Planning Board, Schedule of Meetings (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Schedule-of-Meetings" }
+
+needs_verification:
+  - Quorum and public comment rules (in the board's bylaws, not yet read)
+  - Members' term lengths and term ends
+  - What the board cannot decide

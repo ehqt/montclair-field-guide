@@ -1,0 +1,29 @@
+# Institutions that do not have a sourced data file yet. They appear on the
+# home page as "coming soon". Names and categories only: no descriptions,
+# rosters or schedules until a file in data/institutions/ sources them. When
+# one gets its own file, delete its entry here (the build fails on a
+# duplicate id).
+#
+# layer puts an entry on the relationship map and must come with the source
+# that backs it (the build fails otherwise):
+#   appointed   a board whose members are appointed, per its own page
+#   department  a township department, listed in the township's directory
+#   contracted  a service the township buys from a neighbouring town
+# (departments and contracted services with a page live in data/services/)
+#   above       a separate government that taxes Montclair property
+# Leave layer null when no official source says how the body is seated.
+
+# From the township's Advisory Committee, Boards and Commissions page, read
+# in a browser 2026-10-16.
+
+- id: historic-preservation-commission
+  name: Historic Preservation Commission
+  category: land-use
+  layer: appointed
+  source: { title: "Historic Preservation Commission (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission" }
+- { id: development-review-committee, name: Development Review Committee, category: land-use, layer: null }
+- { id: housing-commission, name: Housing Commission, category: township-government, layer: null }
+- { id: civil-rights-commission, name: Civil Rights Commission, category: township-government, layer: null }
+- { id: landlord-tenant-advisory-committee, name: Landlord-Tenant Advisory Committee, category: township-government, layer: null }
+- { id: complete-streets-oversight-board, name: Complete Streets Oversight Board, category: township-government, layer: null }
+- { id: parks-recreation-advisory-committee, name: Parks & Recreation Advisory Committee, category: services, layer: null }

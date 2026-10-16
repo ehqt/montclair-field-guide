@@ -1,0 +1,31 @@
+# Montclair Field Guide: things that come round every year.
+# Regular meetings are not listed here; the calendar page reads those from
+# each institution file. Each entry states only what its sources say, with
+# the 2026 dates as the example.
+
+- when: March
+  kind: Budget
+  title: County budget approval and public hearing
+  note: >-
+    In 2026 the Board of County Commissioners approved the county budget
+    March 4 and set the public hearing for March 25 at 5:00 pm at the Hall
+    of Records in Newark.
+  institution: essex-county
+  sources:
+    - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+- when: November
+  kind: Election
+  title: General election
+  note: >-
+    In 2026 it is Tuesday, November 3, with polls open 6:00 am to 8:00 pm.
+    Early voting runs October 24 to November 1 at any of the county's
+    early voting sites. Montclair's ballot includes one Councilmember At
+    Large seat and three Board of Education seats, in separate municipal
+    and school sections where every candidate is nominated by petition,
+    along with the County Executive, four at-large county
+    commissioners, the District 5 commissioner and U.S. Senate. Montclair
+    is split between the 10th and 11th Congressional Districts, so the
+    House race depends on where you live.
+  sources:
+    - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+    - { title: "Essex County Clerk, Guide to Voting, 2026 General Election (PDF)", url: "https://www.essexclerk.com/_Content/pdf/GUIDE-TO-VOTING-GENERAL-2026.pdf" }

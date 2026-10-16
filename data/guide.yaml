@@ -1,0 +1,243 @@
+# Montclair Field Guide: the first-meeting guide, glossary, permit finder
+# and "I want to..." list. Each entry states only what its sources say. The
+# state statutes were read from copies hosted by New Jersey state agencies
+# where one was found; the titles below say which copy and how old it is.
+# The state-law entries are carried over from the Glen Ridge Field Guide.
+
+last_verified: 2026-10-16
+
+meeting_basics:
+  - title: You can walk in
+    body: >-
+      State law says all meetings of public bodies shall be open to the
+      public at all times, apart from the closed portions described below.
+    sources:
+      - &opma { title: "Open Public Meetings Act, N.J.S.A. 10:4-12 (state copy, updated March 2022; PDF)", url: "https://www.njconsumeraffairs.gov/Documents/legal/Open-Public-Meeting-Act.pdf" }
+  - title: You do not have to speak, but at two bodies you always can
+    body: >-
+      The same law requires a municipal governing body and a board of
+      education to set aside part of every meeting for public comment on any
+      governmental or school district issue. Each body decides how long
+      that part is. Other public bodies may permit, prohibit or regulate
+      public participation, so check the rules for the body you are visiting.
+    sources:
+      - *opma
+  - title: Part of a meeting can be closed
+    body: >-
+      A public body may exclude the public only from the portion of a
+      meeting that deals with certain subjects. The list in the law includes
+      collective bargaining, pending or anticipated litigation, the
+      employment or discipline of a specific employee, buying or leasing
+      real property with public funds, and material whose disclosure would
+      invade an individual's privacy. Montclair's Board of Education
+      generally opens its meetings at 6:30 pm and goes straight into
+      executive session, with the public session starting at about 7:30 pm.
+    sources:
+      - *opma
+      - &boeabout { title: "About the Board (district page)", url: "https://www.montclairps.org/board_of_education/about_the_board" }
+  - title: Many meetings are on TV34
+    body: >-
+      Council meetings are broadcast live on local channel 34 and on the
+      Montclair TV34 YouTube channel. Planning Board meetings are broadcast
+      on TV34 and the Montclair Government YouTube channel.
+    sources:
+      - &councilsched { title: "Council Meeting Schedule (township page)", url: "https://www.montclairnjusa.org/Government/Council-Meeting-Schedule" }
+      - &pb { title: "Planning Board (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board" }
+
+glossary:
+  - term: Alternate member
+    meaning: >-
+      A member appointed in addition to the regular members. On a historic
+      preservation commission, state law says alternates may take part in
+      discussions but may vote only when a regular member is absent or
+      disqualified. Montclair's Planning Board has two alternates. Its
+      Zoning Board of Adjustment may have up to four, appointed by the
+      Council for two-year terms.
+    sources:
+      - &mlul { title: "Municipal Land Use Law, historic preservation sections (NJ Historic Preservation Office excerpt, 2017; PDF)", url: "https://www.nj.gov/state/bac/planning/documents/mlul022017.pdf" }
+      - &pbmembers { title: "Planning Board, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Members" }
+      - &zbamembers { title: "Zoning Board of Adjustment, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Zoning-Board-of-Adjustment/Members" }
+  - term: Certificate of Appropriateness
+    meaning: >-
+      The approval needed before altering the appearance of a property in
+      one of Montclair's locally landmarked historic districts, or of an
+      individually designated landmark. The Historic Preservation Commission
+      reviews the applications.
+    institution: historic-preservation-commission
+    sources:
+      - &hpc { title: "Historic Preservation Commission (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission" }
+  - term: Council-manager plan
+    aliases: [Faulkner Act, Township Manager]
+    meaning: >-
+      Montclair's form of government since 1980, under the state's Optional
+      Municipal Charter Law (the Faulkner Act). The elected Council sets all
+      policy; a Township Manager it appoints runs the township day to day.
+      The Mayor presides over the Council and votes as a member.
+    institution: mayor-and-council
+    sources:
+      - &cmform { title: "Council – Manager Form of Government (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Council-Manager-Form-of-Government" }
+  - term: Executive session
+    aliases: [Closed session]
+    meaning: >-
+      A part of a meeting the public may not attend. State law allows a
+      public body to exclude the public only while it discusses subjects on
+      a set list, such as collective bargaining, litigation or the
+      employment of a specific person. Montclair's Board of Education says
+      its executive sessions cover personnel matters, out-of-district
+      student placements and pending legal matters, and that all official
+      votes are taken in public.
+    sources:
+      - *opma
+      - *boeabout
+  - term: Governing body
+    meaning: >-
+      In Montclair, the Township Council: the Mayor, two councilors at large
+      and four ward councilors.
+    institution: mayor-and-council
+    sources:
+      - &council { title: "Mayor & Township Council (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council" }
+  - term: Historic district
+    meaning: >-
+      Montclair has four locally landmarked historic districts: Town Center,
+      Upper Montclair, Pine Street and Watchung Plaza. It also has 64
+      individually designated landmarks, and six National and State
+      Registered Historic Districts.
+    institution: historic-preservation-commission
+    sources:
+      - *hpc
+  - term: Master Plan
+    meaning: >-
+      A plan the Planning Board may prepare and, after a public hearing,
+      adopt or amend, "to guide the use of lands within the municipality".
+      Montclair's Planning Board prepares the Township Master Plan.
+    institution: planning-board
+    sources:
+      - *mlul
+      - *pb
+  - term: Ordinance
+    meaning: >-
+      An act or regulation of a municipality's governing body that must be
+      put in writing, read at more than one meeting and published.
+      Montclair's ordinances are in its eCode360 library.
+    sources:
+      - &ordres { title: "N.J.S.A. 40:49-1 (FindLaw copy, current as of January 1, 2024)", url: "https://codes.findlaw.com/nj/title-40-municipalities-and-counties/nj-st-sect-40-49-1/" }
+      - &ecode { title: "Ordinances & Resolutions (township page)", url: "https://www.montclairnjusa.org/Government/Ordinances-Resolutions-eCode-360" }
+  - term: Public comment
+    meaning: >-
+      The part of a meeting set aside for members of the public to speak.
+      State law requires one at every meeting of a municipal governing body
+      and of a board of education, and lets each body decide how long it is.
+    sources:
+      - *opma
+  - term: Resolution
+    meaning: >-
+      An act or regulation of a municipality's governing body that must be
+      put in writing but, unlike an ordinance, may be finally passed at the
+      meeting where it is introduced. Montclair's adopted resolutions are
+      posted in eCode360.
+    sources:
+      - *ordres
+      - &agendas { title: "Council Meeting Agendas (township page)", url: "https://www.montclairnjusa.org/Government/Council-Meeting-Agendas" }
+  - term: Variance
+    aliases: ["C variance", "D variance", Use variance]
+    meaning: >-
+      Permission to deviate from the zoning ordinance. Montclair's Zoning
+      Board of Adjustment decides "C" variances (for the property's size,
+      shape or topography, or where the deviation advances the purposes of
+      the Municipal Land Use Law) and "D" variances, such as a use the
+      district does not allow. A "D" variance needs at least 5 votes. The
+      Planning Board can grant bulk variances that come with a site plan or
+      subdivision application.
+    institution: board-of-adjustment
+    sources:
+      - &zba { title: "Zoning Board of Adjustment (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Zoning-Board-of-Adjustment" }
+      - *pb
+  - term: Ward
+    meaning: >-
+      One of Montclair's four election districts for the Township Council.
+      Each ward elects one councilor; two more are elected at large.
+    institution: mayor-and-council
+    sources:
+      - &ward { title: "Find Your Ward (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Find-Your-Ward" }
+      - *council
+
+# The permit finder. Starting entries; more to come from the township's
+# forms pages.
+permits:
+  - project: Build, renovate or repair
+    who: Building Department
+    body: >-
+      The Building Department handles construction permits and asks you to
+      call first for instructions on your specific project. Permit materials
+      can be mailed to the Montclair Building Department, Municipal Building,
+      2nd floor.
+    contact: 973-509-4951 · 205 Claremont Avenue, 2nd floor
+    sources:
+      - &building { title: "Building Office (township page)", url: "https://www.montclairnjusa.org/Government/Departments/Building-Office" }
+  - project: Change the outside of a landmarked property or one in a local historic district
+    who: Historic Preservation Commission
+    body: >-
+      Complete an Application for a Certificate of Appropriateness. The
+      Commission holds public hearings once a month, on the fourth Thursday,
+      in the Council Chambers.
+    contact: 973-509-4955
+    institution: historic-preservation-commission
+    sources:
+      - *hpc
+  - project: Build something the zoning ordinance does not allow
+    who: Zoning Board of Adjustment
+    body: >-
+      Apply for a variance through the township's Application for
+      Development (Zoning Variance) page. The Department of Planning &
+      Community Development staffs the board.
+    institution: board-of-adjustment
+    sources:
+      - *zba
+      - *zbamembers
+
+tasks:
+  - want: Pay a property tax, water or sewer bill
+    who: Finance Department
+    body: >-
+      Pay online with a card (convenience fees apply) or by e-check (no
+      fee). A returned payment adds a $20 fee to your next bill.
+    contact: 973-509-4964 · 205 Claremont Avenue, 3rd floor
+    sources:
+      - { title: "Pay Taxes, Water or Sewer Bill (township page)", url: "https://www.montclairnjusa.org/How-Do-I/Pay-Taxes-Water-or-Sewer-Bill" }
+      - { title: "Finance and Taxes (township page)", url: "https://www.montclairnjusa.org/Government/Departments/Finance-and-Taxes" }
+  - want: Request a public record (OPRA)
+    who: Township Clerk
+    body: >-
+      Use the Official OPRA Request Form. Requests can be submitted online
+      through the Montclair NextRequest portal.
+    contact: 973-509-4900
+    sources:
+      - { title: "Open Public Records Act (township page)", url: "https://www.montclairnjusa.org/Government/Office-of-the-Township-Clerk/Open-Public-Records-Act" }
+  - want: Find out which ward I live in
+    who: Township Clerk
+    body: >-
+      The township's interactive ward viewer finds the ward for an address.
+      The Township Clerk keeps the official ward map.
+    institution: mayor-and-council
+    to: /institutions/mayor-and-council
+    to_label: Mayor and Township Council
+    sources:
+      - *ward
+  - want: Look up a township ordinance
+    who: Township Clerk
+    body: >-
+      All township ordinances and resolutions are in the township's
+      eCode360 library. For questions, call the Municipal Clerk's Office.
+    contact: 973-509-4900
+    sources:
+      - *ecode
+  - want: Watch a council meeting
+    who: TV34
+    body: >-
+      Council meetings are broadcast live on local channel 34 and stream
+      live on the Montclair TV34 YouTube channel.
+    institution: mayor-and-council
+    to: /institutions/mayor-and-council
+    to_label: Mayor and Township Council
+    sources:
+      - *councilsched
