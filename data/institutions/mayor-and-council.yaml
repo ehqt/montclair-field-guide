@@ -36,7 +36,7 @@ members:
   # Names, seats, phones and emails are on the Mayor & Township Council page.
   - { name: Dr. Renee Baskerville,   role: Mayor,                                   seated_by: elected }
   - { name: Susan Shin Andersen,      role: Deputy Mayor and Councilor At Large,     seated_by: elected }
-  - { name: William Harrison,         role: Councilor At Large }
+  - { name: William Harrison,         role: Councilor At Large,                      seated_by: appointed }
   - { name: Erik D'Amato,             role: 1st Ward Councilor,                      seated_by: elected }
   - { name: Eileen Birmingham,        role: 2nd Ward Councilor,                      seated_by: elected }
   - { name: Rahum Williams,           role: 3rd Ward Councilor,                      seated_by: elected }
@@ -88,8 +88,15 @@ notes:
   - title: On the November 3, 2026 ballot
     body: >-
       One Councilmember At Large seat is on Montclair's 2026 general
-      election ballot, in the municipal election section, where candidates are nominated by petition.
+      election ballot, in the municipal election section, where candidates
+      are nominated by petition. The seat had been vacated, and at its
+      October 7, 2025 meeting the Council unanimously appointed William
+      Harrison to fill it until the special election in November 2026.
+      Voters will elect a Councilor-At-Large to fill the vacancy he now
+      holds.
     sources:
+      - { title: "Councilor At-Large William Harrison (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Councilor-At-Large-William-Harrison-page" }
+      - { title: "Petitions Filed for Councilor-At-Large Vacancy (township notice, August 20, 2026)", url: "https://www.montclairnjusa.org/News-articles/Petitions-Filed-for-Councilor-At-Large-Vacancy" }
       - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF), Township of Montclair pages", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
 
 meets:
@@ -126,7 +133,11 @@ meets:
     - { date: 2026-12-29 }
 
 how_to_engage:
-  public_comment: null
+  public_comment: >
+    Public comment comes early in the meeting, after the minutes are
+    approved. Speakers sign in at the podium, state their name, and have
+    three minutes to comment on agenda items. Comments on a pending
+    ordinance belong in the public hearing for that ordinance.
   notice: >-
     Agendas and meeting documents are posted on the township's Council
     Meeting Agendas page. Older agendas, adopted resolutions and minutes are
@@ -162,7 +173,10 @@ sources:
   - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
   - { title: "Township of Montclair, 2026 User Friendly Budget (PDF)", url: "https://www.montclairnjusa.org/files/sharedassets/public/v/2/government/departments/finance-and-taxes/financial-information/annual-user-friendly-budgets/user-friendly-budget-2026.pdf" }
 
+  - { title: "Councilor At-Large William Harrison (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Councilor-At-Large-William-Harrison-page" }
+  - { title: "Petitions Filed for Councilor-At-Large Vacancy (township notice, August 20, 2026)", url: "https://www.montclairnjusa.org/News-articles/Petitions-Filed-for-Councilor-At-Large-Vacancy" }
+  - { title: "Township Council Regular Meeting agenda, July 14, 2026 (PDF)", url: "https://d3n9y02raazwpg.cloudfront.net/montclairnj/e2c879be-52dc-11f1-9b4d-005056a89546-fb19c21b-5e25-4634-955b-6f6fb6884b5e-1783735594.pdf" }
 needs_verification:
-  - How William Harrison came to hold the at-large seat, and why only one at-large seat is on the 2026 ballot
-  - Quorum, and the Council's rules for public comment (set by Council resolution under Montclair Code § 3-10; the resolution has not been read)
+  - Quorum, and the Council resolution setting its procedural rules (Montclair Code § 3-10); the comment rules above are as printed on the July 14, 2026 agenda
+  - The term of the at-large seat filled in November 2026 (the 2026 user-friendly budget lists it as ending June 30, 2028)
   - The Clerk's name on a township page (it is taken from the 2026 user-friendly budget)

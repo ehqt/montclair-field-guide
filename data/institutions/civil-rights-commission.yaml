@@ -1,0 +1,107 @@
+# Montclair Field Guide: one institution file
+# From the township's Civil Rights Commission, CRC Members, Meeting Dates
+# and FAQs pages, read in a browser 2026-10-16.
+
+id: civil-rights-commission
+name: Civil Rights Commission
+aliases: [CRC, Montclair Civil Rights Commission]
+category: township-government
+
+summary: >
+  An advisory board to the Township Council. It recommends programs to end
+  discrimination, addresses tensions in the community and reviews the
+  Township's Affirmative Action Policy.
+powers:
+  # From the commission's page and FAQs.
+  - Advise the Township Council, to which it reports
+  - Recommend programs designed to eliminate discrimination
+  - Address problems involving tensions in the community
+  - Review the Township Affirmative Action Policy
+  - Provide a forum for raising civil rights issues in Montclair
+limits:
+  - It does not make arrests, employment decisions or appointments to other bodies, hold hearings or issue rulings, provide legal services or enforce the law
+
+how_seated: >-
+  The commission's FAQs say it has 17 members, including a Montclair State
+  University student and a local high school student, with liaisons to the
+  police and the schools. All commissioners must live in Montclair, and the
+  Township Council handles open and pending appointments.
+seated_source: { title: "Civil Rights Commission FAQs (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/Civil-Rights-Commission-FAQs" }
+appointed_by: The Township Council
+reports_to: The Township Council
+
+members:
+  - { name: Ravi Srinivasan,        role: Chair }
+  - { name: Matilda Carvajal,       role: Vice Chair }
+  - { name: Leslie K. Brown,        role: Treasurer }
+  - { name: null,                   role: Secretary (listed as open) }
+  - { name: Madeline Gale,          role: Commissioner }
+  - { name: Reubena Spence,         role: Commissioner }
+  - { name: Kevin Pierre,           role: Commissioner }
+  - { name: Kevin Allen,            role: Commissioner }
+  - { name: Joni Cohen,             role: Commissioner }
+  - { name: Matt Frankel,           role: Commissioner }
+  - { name: Leonore Dickenson,      role: Commissioner }
+  - { name: Ashley Few,             role: Commissioner }
+  - { name: Madeline Guthrie,       role: Commissioner }
+  - { name: Marcia Almeida,         role: Commissioner }
+  - { name: Jordan Jeremiah Stewart, role: Commissioner }
+  - { name: Danielle Coon,          role: Commissioner }
+  - { name: Yvonne Bouknight,       role: Board of Education designee }
+  - { name: Lieutenant Tyrone Williams, role: Police Department civil rights designee }
+  - { name: Alisha Dawkins,         role: "Township designee (EEOC and affordable housing)" }
+  - { name: Mayor Renee Baskerville, role: Councilor liaison }
+  - { name: null,                   role: Councilor liaison (listed as vacant) }
+  - { name: Hammad Sharif Rahman,   role: High school non-voting designee }
+  - { name: null,                   role: Montclair State University non-voting designee (listed as open) }
+roster_as_of: 2026-10-16
+
+meets:
+  schedule: Usually the third Thursday of the month; public comment from about 7:00 pm
+  schedule_note: >
+    No meeting in August and no public meeting in December (the commission
+    may meet in executive session then).
+  location: 205 Claremont Avenue
+  quorum: null
+  dates:
+    - { date: 2026-01-15 }
+    - { date: 2026-02-19 }
+    - { date: 2026-03-19 }
+    - { date: 2026-04-16 }
+    - { date: 2026-05-21 }
+    - { date: 2026-06-18 }
+    - { date: 2026-07-16 }
+    - { date: 2026-09-17 }
+    - { date: 2026-10-15 }
+    - { date: 2026-11-19 }
+    - { date: 2026-12-17, note: Executive meeting }
+
+how_to_engage:
+  public_comment: >
+    Each meeting has a slot for public comment on civil rights issues in
+    Montclair, typically starting at 7:00 pm. The commission asks speakers to
+    fill in its public comment form, email or call at least 48 hours ahead,
+    and gives them priority; others may speak after.
+  contact:
+    phone: 973-307-0366
+    email: civilrightscommission@montclairnjusa.org
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission
+  members: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/CRC-Members
+  meetings_url: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/Meeting-Dates
+  minutes: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/CRC-Meeting-Minutes
+  faqs: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/Civil-Rights-Commission-FAQs
+
+last_verified: 2026-10-16
+verification_level: township pages read in a browser
+sources:
+  - { title: "Civil Rights Commission (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission" }
+  - { title: "CRC Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/CRC-Members" }
+  - { title: "Civil Rights Commission, Meeting Dates (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/Meeting-Dates" }
+  - { title: "Civil Rights Commission FAQs (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Civil-Rights-Commission/Civil-Rights-Commission-FAQs" }
+
+needs_verification:
+  - Members' terms
+  - The meeting room
+  - The member count (the FAQs say 17; the members page lists more names, including designees and liaisons)

@@ -1,0 +1,82 @@
+# Montclair Field Guide: one institution file
+# From the township's Development Review Committee, Members and Schedule of
+# Meetings pages, read in a browser 2026-10-16.
+
+id: development-review-committee
+name: Development Review Committee
+aliases: [DRC, Site plan review, Minor site plan]
+category: land-use
+
+summary: >
+  A five-member committee that reviews every site plan application going to
+  the Planning Board or the Zoning Board of Adjustment, and itself decides
+  minor site plans that need no variances.
+powers:
+  # From the committee's page.
+  - Review site plan applications for compliance with the township's zoning requirements, development regulations and design standards
+  - Make recommendations on the design and technical elements of any application
+  - Hold public hearings on and approve Applications for Development seeking minor site plan approval with no variance requests
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Under Montclair Code § 202-10.2: two Planning Board members (one may be the
+  Mayor) appointed by the Planning Board Chair, one Zoning Board of
+  Adjustment member appointed by that board's Chair, the Planning Director
+  and the Board Engineer. Terms are one year from January 1.
+seated_source: { title: "Development Review Committee, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee/Members" }
+appointed_by: The chairs of the Planning Board and the Zoning Board of Adjustment
+reports_to: null
+
+members:
+  - { name: Janice Talley,       credentials: "PP, AICP", role: Director of Planning }
+  - { name: "Norberto Hernandez (Neglia Engineering)", credentials: PE, role: Engineer }
+  - { name: Erik D'Amato,        role: 1st Ward Councilor }
+  - { name: Dr. Renee Baskerville, role: Mayor }
+  - { name: null,                role: Zoning Board member (listed as to be determined) }
+roster_as_of: 2026-10-16
+
+meets:
+  schedule: Usually the first Thursday of the month, 7:00 pm
+  schedule_note: >
+    Meetings are on the dates in the annual schedule; if no business is
+    scheduled, a cancelation notice is posted.
+  location: Council Chamber, Municipal Building, 205 Claremont Avenue
+  quorum: null
+  dates:
+    - { date: 2026-01-08 }
+    - { date: 2026-02-05 }
+    - { date: 2026-03-05 }
+    - { date: 2026-04-02 }
+    - { date: 2026-05-07 }
+    - { date: 2026-06-04 }
+    - { date: 2026-07-02, note: Canceled }
+    - { date: 2026-08-06, note: Canceled }
+    - { date: 2026-09-03 }
+    - { date: 2026-10-01, note: Canceled }
+    - { date: 2026-11-05 }
+    - { date: 2026-12-03 }
+
+how_to_engage:
+  public_comment: null
+  notice: >-
+    Agendas are in the Public Documents section of the township's eCode360
+    library.
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee
+  members: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee/Members
+  meetings_url: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee/Development-Review-Committee-Schedule-of-Meetings
+  agendas_url: https://ecode360.com/MO0769/documents/Agendas
+
+last_verified: 2026-10-16
+verification_level: township pages read in a browser
+sources:
+  - { title: "Development Review Committee (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee" }
+  - { title: "Development Review Committee, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee/Members" }
+  - { title: "Development Review Committee, Schedule of Meetings (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Development-Review-Committee/Development-Review-Committee-Schedule-of-Meetings" }
+
+needs_verification:
+  - Which Planning Board seat each listed member fills
+  - The Zoning Board member (listed as to be determined)
+  - Public comment rules

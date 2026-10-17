@@ -1,0 +1,70 @@
+# Montclair Field Guide: one institution file
+# From the township's Landlord-Tenant Advisory Committee page, read in a
+# browser 2026-10-16. The page quotes Resolution R-21-247.
+
+id: landlord-tenant-advisory-committee
+name: Landlord-Tenant Advisory Committee
+aliases: [LTAC, Rental housing, Tenants, Landlords]
+category: township-government
+
+summary: >
+  A nine-member committee appointed by the Township Council that reviews
+  rental housing issues, recommends improvements to the Council, and
+  answers questions from tenants and landlords.
+powers:
+  # From Resolution R-21-247, as quoted on the committee's page.
+  - Monitor and review rental housing issues and make recommendations to the Township Council
+  - Respond to inquiries from tenants and landlords, explain rights and obligations, and point them to information and help, including mediation services
+limits:
+  - It does not give legal advice or take part in any formal dispute resolution, including mediation
+  - Its procedural rules are subject to the Township Council's approval
+
+how_seated: >-
+  Appointed by resolution of the Township Council for three-year staggered
+  terms, three a year. At least four members must be tenants and two
+  landlords. The committee elects its own chair, vice chair and recording
+  secretary.
+seated_source: { title: "Landlord-Tenant Advisory Committee (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Landlord-Tenant-Advisory-Committee" }
+appointed_by: The Township Council
+reports_to: The Township Council
+member_terms: 3 years
+
+members:
+  # The page names six members for a nine-member committee.
+  - { name: Kimberly Latortue,     role: Member }
+  - { name: Catherine Graham-Ross, role: Member }
+  - { name: Vincent Harris,        role: Member }
+  - { name: Kyle Parro,            role: Member }
+  - { name: Penny Portnaude,       role: Member }
+  - { name: Sharon Smith,          role: Member }
+  - { name: Aminah Toler,          role: "Councilor liaison (4th Ward)" }
+roster_as_of: 2026-10-16
+
+meets:
+  schedule: At least six times a year
+  location: null
+  quorum: null
+
+how_to_engage:
+  public_comment: null
+  written_comment: >
+    Landlords and tenants with questions, or who want a virtual meeting,
+    can fill in the committee's online intake form or email the general
+    inquiry form to LTACMontclairnj@gmail.com. Allow 5 to 7 business days
+    for a reply.
+  contact:
+    phone: "973-744-1400 ext. 6055"
+    email: LTACMontclairnj@gmail.com
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Landlord-Tenant-Advisory-Committee
+
+last_verified: 2026-10-16
+verification_level: township page read in a browser
+sources:
+  - { title: "Landlord-Tenant Advisory Committee (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Landlord-Tenant-Advisory-Committee" }
+
+needs_verification:
+  - Meeting dates and place
+  - The other seats (the page names six of nine), and which members are tenants or landlords
+  - Public comment rules

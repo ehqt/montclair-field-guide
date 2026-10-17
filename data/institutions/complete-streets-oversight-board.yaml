@@ -1,0 +1,82 @@
+# Montclair Field Guide: one institution file
+# From the township's Complete Streets Oversight Board page, read in a
+# browser 2026-10-16.
+
+id: complete-streets-oversight-board
+name: Complete Streets Oversight Board
+aliases: [Complete Streets, Vision Zero, Pedestrian safety, Bicycle safety]
+category: township-government
+
+summary: >
+  A nine-member board of township staff, police, Council members and two
+  members of the public. It prioritizes transportation projects and
+  recommends pedestrian and bicycle safety policies to the Council.
+powers:
+  # From the board's page, citing Article X of the Township Code.
+  - Review transportation project checklists and comment on Complete Streets checklists submitted to the Planning Board
+  - Identify priority transportation projects through the prioritization process in § 297-63
+  - Study and recommend policies and initiatives to the governing body, including on pedestrian and bicycle safety
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Established by Ordinance O-25-13 in May 2025. Up to five municipal staff
+  appointed by the Township Manager, including the Complete Streets Director
+  as Chair; one member of the Police Department Traffic Safety Bureau
+  appointed by the Chief of Police; up to three Governing Body members
+  appointed by the Governing Body; and two members of the public appointed
+  by the Governing Body for two-year terms.
+seated_source: { title: "Complete Streets Oversight Board (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Complete-Streets-Oversight-Board" }
+appointed_by: The Township Manager, the Chief of Police and the Township Council
+reports_to: null
+
+members:
+  # As listed on the board's page, which names Jacob Nieman twice.
+  - { name: Austin Ashley,          role: Department of Community Services }
+  - { name: Dr. Renee Baskerville,  role: Mayor }
+  - { name: Sgt. Ramil Carandang,   role: Police Department }
+  - { name: Norberto Hernandez,     role: Department of Engineering }
+  - { name: Jacob Nieman,           role: Public }
+  - { name: Susan Shin Andersen,    role: Deputy Mayor }
+  - { name: Janice Talley,          role: Department of Planning }
+  - { name: Jacob Nieman,           role: Complete Streets Department }
+  - { name: Amy Veach,              role: Public }
+roster_as_of: 2026-10-16
+
+meets:
+  schedule: Second Thursday of the month, 12:00 pm
+  schedule_note: >
+    Meetings are in the 2nd Floor Conference Room at noon unless otherwise
+    noted. The page gives a Microsoft Teams link for the October 8, 2026
+    meeting.
+  location: 2nd Floor Conference Room, Municipal Building, 205 Claremont Avenue
+  quorum: null
+  dates:
+    - { date: 2026-02-12 }
+    - { date: 2026-03-12 }
+    - { date: 2026-04-09 }
+    - { date: 2026-05-14 }
+    - { date: 2026-06-11 }
+    - { date: 2026-07-09, note: Canceled }
+    - { date: 2026-07-16 }
+    - { date: 2026-08-13, note: Canceled }
+    - { date: 2026-09-10 }
+    - { date: 2026-10-08 }
+    - { date: 2026-11-12 }
+    - { date: 2026-12-10 }
+
+how_to_engage:
+  public_comment: null
+  notice: Agendas and minutes are linked from the board's page.
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Complete-Streets-Oversight-Board
+
+last_verified: 2026-10-16
+verification_level: township page read in a browser
+sources:
+  - { title: "Complete Streets Oversight Board (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Complete-Streets-Oversight-Board" }
+
+needs_verification:
+  - Who the Complete Streets Director is (the page lists Jacob Nieman both as a public member and for the Complete Streets Department)
+  - Public comment rules

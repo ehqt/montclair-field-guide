@@ -100,15 +100,18 @@ process:
     sources:
       - &mpscal { title: "Montclair Public Schools, SY 26-27 Budget Calendar (PDF)", url: "https://www.montclair.k12.nj.us/UserFiles/Servers/Server_889476/File/Budget%20calendar%2026-27SY%20(f).pdf" }
       - { title: "Budget 2026-2027 (district page)", url: "https://www.montclairps.org/departments/business_office/budget_2025-2026" }
-  - title: The Township Council introduces its budget in spring
+  - title: The Township Council introduces and adopts its budget in spring
     body: >-
-      The Council approved the 2026 budget on introduction on April 7, 2026,
+      The interim Chief Financial Officer presented the 2026 budget to the
+      Council on March 24, 2026. The Council approved the 2026 budget on introduction on April 7, 2026,
       by a 7-0 vote, with the budget to be posted on the township website
       on April 10. The notice set the public hearing for May 5, 2026 at
       8:00 pm, when taxpayers and other interested persons could present
-      objections. The introduced budget's general appropriations include
-      debt service, which the form labels as including school purposes.
+      objections. The Council adopted the budget at its May 5 meeting. The
+      introduced budget's general appropriations include debt service,
+      which the form labels as including school purposes.
     sources:
+      - { title: "Important Dates & Info for the 2026 Municipal Budget (township page)", url: "https://www.montclairnjusa.org/News-articles/Important-Dates-Info-for-the-2026-Municipal-Budget" }
       - { title: "Township of Montclair, 2026 introduced budget (PDF)", url: "https://www.montclairnjusa.org/files/sharedassets/public/v/1/government/departments/finance-and-taxes/financial-information/adopted-budgets/2026-montclair-certified-introduced-budget.pdf" }
   - title: The county's budget runs on its own calendar
     body: >-
@@ -130,11 +133,11 @@ process:
       $7.21 billion in taxable value gave the total rate of 3.516.
     sources: [*dca]
 process_note: >-
-  The date the Council adopted the 2026 township budget has not been
-  confirmed yet.
+  The figures on this page for the township's 2026 budget are from the
+  introduced budget.
 
 needs_verification:
-  - The township's 2026 budget adoption date, and whether the adopted budget changed the introduced figures
+  - Whether the adopted 2026 township budget changed the introduced figures
   - Whether the school budget steps above happened on the planned dates
   - What the "required by the local municipal budget" part of the school levy pays for; the township's 2026 user-friendly budget lists the same $7,744,101 as "Other Special Districts"
   - Certified 2026 figures, once the state publishes its 2026 workbook

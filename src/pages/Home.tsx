@@ -106,7 +106,7 @@ function RelationshipMap() {
         </ul>
         {appointed.length > 0 && (
           <>
-            <div className="map__connector">the Mayor or the Council appoints</div>
+            <div className="map__connector">the Mayor, the Council or other officials appoint</div>
             <ul className="map__pills">
               {appointed.map((b) => (
                 <li key={b.id}>

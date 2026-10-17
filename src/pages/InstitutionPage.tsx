@@ -27,6 +27,7 @@ const LINK_LABELS: Record<string, string> = {
   about: 'About the board',
   application: 'Application for development',
   file_an_application: 'File an application',
+  faqs: 'FAQs',
 }
 
 function linkLabel(key: string) {
