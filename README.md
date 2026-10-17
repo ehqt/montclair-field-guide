@@ -5,8 +5,8 @@ board, commission and office does, who sits on it, when it meets, and where to
 go for what. Not affiliated with the Township of Montclair or the Montclair
 Public Schools.
 
-Not published yet. It is adapted from the Glen Ridge Field Guide
-(https://github.com/ehqt/glen-ridge-field-guide).
+Live at https://ehqt.github.io/montclair-field-guide/. It is adapted from the
+Glen Ridge Field Guide (https://github.com/ehqt/glen-ridge-field-guide).
 
 ## How it works
 
