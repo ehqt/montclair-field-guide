@@ -19,6 +19,7 @@ powers:
   - Hold all powers of the municipality and decide all matters of policy, except as the Faulkner Act or general law provide otherwise
   - Appoint the Township Manager, and suspend or remove the Manager by a majority vote
   - Appoint most members of the Planning Board and all members of the Zoning Board of Adjustment
+  - Serve as the township's Board of Health and its local Alcoholic Beverage Control Board (Montclair Code § 3-11)
 limits:
   - The Mayor has no executive powers beyond a few appointments, such as the library trustees and the Historic Preservation Commission; the Mayor presides over the Council and votes as one of its members
 
@@ -44,6 +45,8 @@ roster_as_of: 2026-10-16
 
 professionals:
   - { name: "Stephen D. Marks", credentials: "PP, AICP", role: Township Manager }
+  # Listed as Municipal Clerk in the township's 2026 user-friendly budget.
+  - { name: Angelese Bermudez Nieves, role: Municipal Clerk }
 
 notes:
   - title: The council-manager plan
@@ -65,6 +68,23 @@ notes:
       ward viewer finds the ward for an address.
     sources:
       - { title: "Find Your Ward (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Find-Your-Ward" }
+  - title: The Council is also the Board of Health
+    body: >-
+      The township code makes the Council the duly constituted Board of
+      Health and the local Alcoholic Beverage Control Board. The code also
+      says the Council sets its regular and conference meetings by a
+      resolution adopted each year, and may adopt bylaws and procedural
+      rules by resolution.
+    sources:
+      - { title: "Montclair Code, Chapter 3, Article II: Township Council (eCode360)", url: "https://ecode360.com/7184387" }
+  - title: Current terms end June 30, 2028
+    body: >-
+      The township's 2026 user-friendly budget, a form filed with the state,
+      lists June 30, 2028 as the end of the Mayor's term and of each
+      councilor's term, including the at-large seat now held by William
+      Harrison.
+    sources:
+      - { title: "Township of Montclair, 2026 User Friendly Budget (PDF)", url: "https://www.montclairnjusa.org/files/sharedassets/public/v/2/government/departments/finance-and-taxes/financial-information/annual-user-friendly-budgets/user-friendly-budget-2026.pdf" }
   - title: On the November 3, 2026 ballot
     body: >-
       One Councilmember At Large seat is on Montclair's 2026 general
@@ -136,12 +156,13 @@ sources:
   - { title: "Council Meeting Agendas (township page)", url: "https://www.montclairnjusa.org/Government/Council-Meeting-Agendas" }
   - { title: "Office of the Township Manager (township page)", url: "https://www.montclairnjusa.org/Government/Office-of-the-Township-Manager" }
   - { title: "Find Your Ward (township page)", url: "https://www.montclairnjusa.org/Government/Mayor-Township-Council/Find-Your-Ward" }
+  - { title: "Montclair Code, Chapter 3, Article II: Township Council (eCode360)", url: "https://ecode360.com/7184387" }
   - { title: "Planning Board, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Planning-Board/Members" }
   - { title: "Zoning Board of Adjustment, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Zoning-Board-of-Adjustment/Members" }
   - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
+  - { title: "Township of Montclair, 2026 User Friendly Budget (PDF)", url: "https://www.montclairnjusa.org/files/sharedassets/public/v/2/government/departments/finance-and-taxes/financial-information/annual-user-friendly-budgets/user-friendly-budget-2026.pdf" }
 
 needs_verification:
   - How William Harrison came to hold the at-large seat, and why only one at-large seat is on the 2026 ballot
-  - When the current four-year council term ends
-  - Quorum, and the Council's rules for public comment
-  - The Township Clerk's name (a search result names the Clerk; the source has not been opened)
+  - Quorum, and the Council's rules for public comment (set by Council resolution under Montclair Code § 3-10; the resolution has not been read)
+  - The Clerk's name on a township page (it is taken from the 2026 user-friendly budget)

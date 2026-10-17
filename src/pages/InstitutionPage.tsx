@@ -26,6 +26,7 @@ const LINK_LABELS: Record<string, string> = {
   manager_page: 'Township Manager',
   about: 'About the board',
   application: 'Application for development',
+  file_an_application: 'File an application',
 }
 
 function linkLabel(key: string) {

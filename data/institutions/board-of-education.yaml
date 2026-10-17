@@ -39,6 +39,7 @@ members:
 roster_as_of: 2026-10-16
 
 professionals:
+  - { name: Ruth B. Turner, role: Superintendent }
   - { name: Dana Sullivan, role: Interim Business Administrator and Board Secretary }
   - { name: Beth Brooks,   role: Treasurer of School Monies }
 
@@ -81,10 +82,11 @@ verification_level: district pages read in a browser
 sources:
   - { title: "Board of Education (district page)", url: "https://www.montclairps.org/board_of_education" }
   - { title: "About the Board (district page)", url: "https://www.montclairps.org/board_of_education/about_the_board" }
+  - { title: "Superintendent (district page)", url: "https://www.montclairps.org/district/superintendent" }
   - { title: "Essex County Clerk, 2026 Official General Election Sample Ballots (PDF)", url: "https://www.essexclerk.com/_Content/pdf/Essex-2026-Sample-Ballots.pdf" }
 
 needs_verification:
   - Length of a term and the month terms begin
-  - The Superintendent's name and contract
+  - The Superintendent's contract
   - Quorum and the board's public comment time limits
   - What the board cannot decide

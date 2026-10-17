@@ -1,0 +1,122 @@
+# Montclair Field Guide: one institution file
+# From the township's Historic Preservation Commission, Members and Schedule
+# of Meetings pages, read in a browser 2026-10-16.
+
+id: historic-preservation-commission
+name: Historic Preservation Commission
+aliases: [HPC, MHPC, Historic Commission, Certificate of Appropriateness, Landmark]
+category: land-use
+
+summary: >
+  A commission of seven members and two alternates, appointed by the Mayor.
+  It reviews changes to properties in Montclair's local historic districts
+  and to its individual landmarks, and proposes new landmarks to the
+  Township Council.
+powers:
+  # From the commission's page.
+  - Survey, research and evaluate buildings, sites and districts for their historic significance
+  - Propose properties worthy of landmark designation to the Township Council
+  - Review and approve changes to properties in the local historic districts and to all other local landmark properties
+  - Advise the Planning Board and the Township Council on matters that may affect historic buildings, sites or districts
+limits:
+  - null   # TO VERIFY
+
+how_seated: >-
+  Appointed by the Mayor under Montclair Code § 347-130. The seven regular
+  members must include at least one from each of three classes, with no
+  fewer than three from Classes A and B: Class A, knowledgeable in building
+  design and construction or architectural history; Class B, with a shown
+  knowledge of or interest in local history; Class C, a Montclair citizen
+  holding no other municipal office, position or employment. Class A and B
+  members may live outside the township. The commission elects its own
+  officers.
+seated_source: { title: "Historic Preservation Commission, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/Members" }
+appointed_by: The Mayor
+reports_to: null
+
+members:
+  - { name: Kathleen Bennett,  role: "Chair; Class A" }
+  - { name: Michael Graham,    role: "Vice Chair; Class C" }
+  - { name: Stephen Rooney,    role: Class A }
+  - { name: John Reimnitz,     role: Class A }
+  - { name: Nicholas Giuliano, role: Class A }
+  - { name: Kevin Pierre,      role: Class B }
+  - { name: Gerald Sweeney,    role: Class B }
+  - { name: Scott Mixer,       role: First Alternate }
+  - { name: Zina Floyd,        role: Second Alternate }
+roster_as_of: 2026-10-16
+
+professionals:
+  - { name: Zainab Kazmi, role: Secretary }
+  - { name: Janice Talley, role: Assistant Secretary }
+  - { name: Janine Bauer, role: Attorney }
+  - { name: "Steven Smolyn (Architectural Heritage Consultants)", role: Historic Architect }
+
+notes:
+  - title: What is protected
+    body: >-
+      Montclair has four locally landmarked historic districts (Town Center,
+      Upper Montclair, Pine Street and Watchung Plaza) and 64 individually
+      designated landmarks. It also has six National and State Registered
+      Historic Districts. The commission was established by ordinance in
+      1994.
+    sources:
+      - { title: "Historic Preservation Commission (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission" }
+
+meets:
+  schedule: Thursdays, about once a month, 7:30 pm
+  schedule_note: >
+    The commission's page describes monthly hearings on the fourth Thursday;
+    the 2026 schedule includes some other Thursdays. If no business is
+    scheduled, a cancelation notice is posted. The commission meets
+    remotely if a public health, state or local emergency has been
+    declared.
+  location: Council Chamber, Municipal Building, 205 Claremont Avenue
+  quorum: null
+  dates:
+    - { date: 2026-01-22 }
+    - { date: 2026-02-19, note: Canceled }
+    - { date: 2026-03-26 }
+    - { date: 2026-04-23 }
+    - { date: 2026-05-21 }
+    - { date: 2026-06-18 }
+    - { date: 2026-07-16 }
+    - { date: 2026-08-20 }
+    - { date: 2026-09-10, note: Rescheduled from September 17 }
+    - { date: 2026-10-22 }
+    - { date: 2026-11-19 }
+    - { date: 2026-12-17 }
+
+how_to_engage:
+  public_comment: null
+  notice: >-
+    Agendas, pending application materials and minutes are posted on the
+    commission's pages. The Department of Planning & Community Development
+    staffs the commission.
+  apply:
+    where: >-
+      To alter the appearance of a locally landmarked property, complete an
+      Application for a Certificate of Appropriateness. To suggest a building
+      for landmark designation, call the township representative.
+  contact:
+    phone: 973-509-4955
+    address: Department of Planning & Community Development, Municipal Building, 205 Claremont Avenue
+
+links:
+  official_page: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission
+  members: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/Members
+  meetings_url: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/Schedule-of-Meetings
+  minutes: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/Minutes-Video
+  file_an_application: https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/File-an-Application
+
+last_verified: 2026-10-16
+verification_level: township pages read in a browser
+sources:
+  - { title: "Historic Preservation Commission (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission" }
+  - { title: "Historic Preservation Commission, Members (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/Members" }
+  - { title: "Historic Preservation Commission, Schedule of Meetings (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission/Schedule-of-Meetings" }
+
+needs_verification:
+  - Members' terms
+  - Quorum and public comment rules (in the commission's bylaws, not yet read)
+  - What the commission cannot decide

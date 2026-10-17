@@ -16,11 +16,6 @@
 # From the township's Advisory Committee, Boards and Commissions page, read
 # in a browser 2026-10-16.
 
-- id: historic-preservation-commission
-  name: Historic Preservation Commission
-  category: land-use
-  layer: appointed
-  source: { title: "Historic Preservation Commission (township page)", url: "https://www.montclairnjusa.org/Government/Advisory-Committee-Boards-and-Commissions/Historic-Preservation-Commission" }
 - { id: development-review-committee, name: Development Review Committee, category: land-use, layer: null }
 - { id: housing-commission, name: Housing Commission, category: township-government, layer: null }
 - { id: civil-rights-commission, name: Civil Rights Commission, category: township-government, layer: null }

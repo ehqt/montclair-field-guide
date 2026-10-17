@@ -200,11 +200,14 @@ tasks:
     who: Finance Department
     body: >-
       Pay online with a card (convenience fees apply) or by e-check (no
-      fee). A returned payment adds a $20 fee to your next bill.
-    contact: 973-509-4964 · 205 Claremont Avenue, 3rd floor
+      fee). A returned payment adds a $20 fee to your next bill. Property
+      taxes are due February 1, May 1, August 1 and November 1, with a
+      10-day grace period. The Tax Collector's office is on the first floor.
+    contact: "Tax Collector: 973-509-4921 · 205 Claremont Avenue, 1st floor"
     sources:
       - { title: "Pay Taxes, Water or Sewer Bill (township page)", url: "https://www.montclairnjusa.org/How-Do-I/Pay-Taxes-Water-or-Sewer-Bill" }
       - { title: "Finance and Taxes (township page)", url: "https://www.montclairnjusa.org/Government/Departments/Finance-and-Taxes" }
+      - { title: "Tax and Property Assessment Q&A (township page)", url: "https://www.montclairnjusa.org/Government/Departments/Finance-and-Taxes/Tax-and-Property-Assessment-QA" }
   - want: Request a public record (OPRA)
     who: Township Clerk
     body: >-

@@ -13,6 +13,46 @@
   institution: essex-county
   sources:
     - { title: "Essex County 2026 budget (PDF)", url: "https://essexcountynj.org/wp-content/uploads/2026/05/2026-County-Budget.pdf" }
+- when: February to May
+  kind: Budget
+  title: School budget presentations, hearing and adoption
+  note: >-
+    In 2026 the district's calendar planned Board of Education budget
+    presentations on February 9, February 25 and March 11, adoption of a
+    tentative budget on March 18, a public hearing on April 29 at 6:30 pm,
+    and adoption of the final budget on May 6.
+  institution: board-of-education
+  sources:
+    - { title: "Montclair Public Schools, SY 26-27 Budget Calendar (PDF)", url: "https://www.montclair.k12.nj.us/UserFiles/Servers/Server_889476/File/Budget%20calendar%2026-27SY%20(f).pdf" }
+- when: April and May
+  kind: Budget
+  title: Township budget introduction and public hearing
+  note: >-
+    In 2026 the Township Council approved the budget on introduction on
+    April 7 and set the public hearing for May 5 at 8:00 pm.
+  institution: mayor-and-council
+  sources:
+    - { title: "Township of Montclair, 2026 introduced budget (PDF)", url: "https://www.montclairnjusa.org/files/sharedassets/public/v/1/government/departments/finance-and-taxes/financial-information/adopted-budgets/2026-montclair-certified-introduced-budget.pdf" }
+- when: Before May 1
+  kind: Deadline
+  title: Property tax assessment appeals
+  note: >-
+    To appeal your property's assessed value, file a formal appeal with the
+    Essex County Board of Taxation. The township says it must be received
+    before May 1.
+  institution: essex-county
+  sources:
+    - { title: "Tax and Property Assessment Q&A (township page)", url: "https://www.montclairnjusa.org/Government/Departments/Finance-and-Taxes/Tax-and-Property-Assessment-QA" }
+- when: February, May, August, November
+  kind: Deadline
+  title: Quarterly property tax payments
+  note: >-
+    The township lists the due dates as February 1, May 1, August 1 and
+    November 1, with a 10-day grace period. Late payments are charged
+    interest of 8% on the first $1,500 and 18% above that, back to the first
+    of the month.
+  sources:
+    - { title: "Tax and Property Assessment Q&A (township page)", url: "https://www.montclairnjusa.org/Government/Departments/Finance-and-Taxes/Tax-and-Property-Assessment-QA" }
 - when: November
   kind: Election
   title: General election
