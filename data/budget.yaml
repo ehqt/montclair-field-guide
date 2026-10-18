@@ -6,13 +6,15 @@
 # from the levies at build time, not stored here.
 
 tax_year: 2025
-last_verified: 2026-10-16
+last_verified: 2026-10-17
 sources:
   - &dca
     title: "NJ Department of Community Affairs, 2025 Property Tax Information (Excel)"
     url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax/25_data/25taxes.xls"
   - title: "NJ DCA Division of Local Government Services, Property Tax Information"
     url: "https://www.nj.gov/dca/dlgs/resources/Property_Tax_info.shtml"
+  - title: "Minutes of the Township Council regular meeting, May 5, 2026 (PDF, eCode360)"
+    url: "https://ecode360.com/MO0769/document/753263041.pdf"
 
 net_valuation_taxable: 7212368100
 total_rate: 3.516                    # per $100 of assessed value
@@ -54,8 +56,8 @@ shares:
     pays_source: *dca
     full_budget:
       text: >-
-        The township's 2026 budget as introduced has total general
-        appropriations of $106,806,783, down from $110,791,069 in 2025. It
+        The township's 2026 budget, adopted May 5 with the amounts it was
+        introduced with, has total general appropriations of $106,806,783, down from $110,791,069 in 2025. It
         would raise $64,449,753 for municipal purposes, an estimated
         municipal purpose rate of 0.893 (0.868 in 2025), and $4,271,357 for
         the library.
@@ -107,11 +109,17 @@ process:
       by a 7-0 vote, with the budget to be posted on the township website
       on April 10. The notice set the public hearing for May 5, 2026 at
       8:00 pm, when taxpayers and other interested persons could present
-      objections. The Council adopted the budget at its May 5 meeting. The
-      introduced budget's general appropriations include debt service,
-      which the form labels as including school purposes.
+      objections. After the hearing on May 5 the Council adopted the budget
+      7-0 (resolution R-26-152). The resolution raises $64,449,753.49 for
+      municipal purposes, $4,271,356.79 for the library and $7,878,178 for
+      school debt, and states that each item of revenue and appropriation
+      is in the same amount as in the budget the state Director of Local
+      Government Services approved. The general appropriations include
+      debt service, which the budget form labels as including school
+      purposes.
     sources:
       - { title: "Important Dates & Info for the 2026 Municipal Budget (township page)", url: "https://www.montclairnjusa.org/News-articles/Important-Dates-Info-for-the-2026-Municipal-Budget" }
+      - { title: "Minutes of the Township Council regular meeting, May 5, 2026 (PDF, eCode360)", url: "https://ecode360.com/MO0769/document/753263041.pdf" }
       - { title: "Township of Montclair, 2026 introduced budget (PDF)", url: "https://www.montclairnjusa.org/files/sharedassets/public/v/1/government/departments/finance-and-taxes/financial-information/adopted-budgets/2026-montclair-certified-introduced-budget.pdf" }
   - title: The county's budget runs on its own calendar
     body: >-
@@ -134,11 +142,11 @@ process:
     sources: [*dca]
 process_note: >-
   The figures on this page for the township's 2026 budget are from the
-  introduced budget.
+  introduced budget. The Council's adoption resolution of May 5, 2026 keeps
+  each item at its introduced amount.
 
 needs_verification:
-  - Whether the adopted 2026 township budget changed the introduced figures
   - Whether the school budget steps above happened on the planned dates
-  - What the "required by the local municipal budget" part of the school levy pays for; the township's 2026 user-friendly budget lists the same $7,744,101 as "Other Special Districts"
+  - What the "required by the local municipal budget" part of the school levy pays for; the township's 2026 user-friendly budget lists the same $7,744,101 as "Other Special Districts" for 2025, and the 2026 adoption resolution raises $7,878,178 "for school purposes in Type 1 School District" (debt)
   - Certified 2026 figures, once the state publishes its 2026 workbook
   - The meeting at which the commissioners voted to adopt the 2026 county budget
